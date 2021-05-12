@@ -13,13 +13,13 @@ const useValidation = (initialState, validate, fn) => {
 
       setSubmitForm(false);
     }
-  }, []);
+  }, [errors]);
 
   // Method execute when the user write something
   const handleChange = (e) => {
     setValues({
       ...values,
-      [e.target.name] : e.target.values
+      [e.target.name] : e.target.value
     })
   }
 
@@ -31,12 +31,18 @@ const useValidation = (initialState, validate, fn) => {
     setSubmitForm(true);
   }
 
+  // Method event blur
+  const handleBlur = () => {
+    const errorsValidation = validate(values);
+    setErrors(errorsValidation);
+  }
+
   return {
     values,
     errors,
-    submitForm,
     handleSubmit,
-    handleChange
+    handleChange,
+    handleBlur
   }
 }
 
