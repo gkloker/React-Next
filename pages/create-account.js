@@ -62,6 +62,7 @@ const CreateAccount = () => {
             />
           </Field>
           {errors.name && <Error>{errors.name}</Error>}
+
           <Field>
             <label htmlFor="email">Email</label>
             <input
@@ -75,6 +76,7 @@ const CreateAccount = () => {
             />
           </Field>
           {errors.email && <Error>{errors.email}</Error>}
+
           <Field>
             <label htmlFor="password">Password</label>
             <input

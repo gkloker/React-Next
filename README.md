@@ -36,4 +36,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Libraries
 
-npm install @emotion/core @emotion/styled babel-plugin-emotion @emotion/babel-preset-css-prop @babel/core @emotion/react –save @emotion/babel-plugin
+
+```bash
+npm i @emotion/core @emotion/styled babel-plugin-emotion @emotion/babel-preset-css-prop @babel/core @emotion/react –save @emotion/babel-plugin
+
+npm i firebase firebase-admin
+
+npm i react-firebase-file-uploader
+```
+
+Link: [react-firebase-file-uploader](https://www.npmjs.com/package/react-firebase-file-uploader)
