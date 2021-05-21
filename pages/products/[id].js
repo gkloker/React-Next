@@ -76,19 +76,23 @@ const Product = () => {
               <img src={imageUrl} alt=""/>
               <p>{description}</p>
 
-              <h2>Add a comment</h2>
-              <form>
-                <Field>
-                  <input
-                    type="text"
-                    name="message"
-                  />
-                </Field>
-                <InputSubmit
-                  type="submit"
-                  value="Add Comment"
-                />
-              </form>
+              {user && (
+                <>
+                  <h2>Add a comment</h2>
+                  <form>
+                    <Field>
+                      <input
+                      type="text"
+                      name="message"
+                      />
+                    </Field>
+                    <InputSubmit
+                    type="submit"
+                    value="Add Comment"
+                    />
+                  </form>
+                </>
+              )}
 
               <h2 css={css`
                 margin: 2rem 0;
@@ -114,7 +118,10 @@ const Product = () => {
                   text-align: center;
                 `}
                 >{votes} Votes</p>
-                <Button>Vote</Button>
+
+                {user && (
+                  <Button>Vote</Button>
+                )}
               </div>
             </aside>
           </ProductContainer>
