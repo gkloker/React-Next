@@ -43,6 +43,8 @@ npm i @emotion/core @emotion/styled babel-plugin-emotion @emotion/babel-preset-c
 npm i firebase firebase-admin
 
 npm i react-firebase-file-uploader
+
+npm i date-fns
 ```
 
 Link: [react-firebase-file-uploader](https://www.npmjs.com/package/react-firebase-file-uploader)

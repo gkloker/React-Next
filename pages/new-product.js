@@ -45,7 +45,7 @@ const NewProduct = () => {
 
   async function createProduct() {
     // If user logout go to login
-    if(!user) {
+    if (!user) {
       return router.push("/login");
     }
 
@@ -58,7 +58,11 @@ const NewProduct = () => {
       description,
       votes: 0,
       comments: [],
-      created: Date.now()
+      created: Date.now(),
+      owner: {
+        id: user.uid,
+        name: user.displayName
+      }
     }
 
     // Insert in DB
