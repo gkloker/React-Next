@@ -72,7 +72,7 @@ const Votes = styled.div`
   padding: 1rem 3rem;
   
   div {
-    font-size: 2rem;
+    font-size: 2rem
   }
   p {
     margin: 0;
