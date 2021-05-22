@@ -29,11 +29,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/populars": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/populars.js"
-    ],
     "/products/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
