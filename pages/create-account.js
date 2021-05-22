@@ -24,9 +24,9 @@ const CreateAccount = () => {
     handleSubmit,
     handleChange,
     handleBlur
-  } = useValidation(INITIAL_STATE, validateCreateAccount, createAccound);
+  } = useValidation(INITIAL_STATE, validateCreateAccount, createAccount);
 
-  async function createAccound() {
+  async function createAccount() {
     try {
       await firebase.register(values.name, values.email, values.password);
       Router.push("/");
