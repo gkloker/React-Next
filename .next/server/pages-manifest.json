@@ -1,7 +1,13 @@
 {
   "/_app": "pages/_app.js",
+  "/create-account": "pages/create-account.html",
+  "/": "pages/index.html",
+  "/login": "pages/login.html",
+  "/new-product": "pages/new-product.html",
+  "/populars": "pages/populars.html",
+  "/products/[id]": "pages/products/[id].html",
+  "/search": "pages/search.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/search": "pages/search.js"
+  "/404": "pages/404.html"
 }
